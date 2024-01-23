@@ -3,9 +3,6 @@
     Layout = null;
 }
 
- @*<h1>Welcome!!!</h1> *@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +13,32 @@
     <script type="text/javascript" src="js/Vertex_Shader_Code.js"></script>
     <script type="text/javascript" src="js/Fragment_Shader_Code.js"></script>
     <script type="text/javascript" src="js/initShaders.js"></script>
-
 </head>
 <body>
-    <canvas id="canvasGL"></canvas>
+    <div class="box">
+        <div class="formXYZ">
+            <form id="IDformXYZ" method="post" action="/Home/Index"> 
+                <label for="x">X-coordinate:</label>
+                <input type="text" id="x" name="x" required /><br />
+        
+                <label for="y">Y-coordinate:</label>
+                <input type="text" id="y" name="y" required /><br />
+        
+                <label for="z">Z-coordinate:</label>
+                <input type="text" id="z" name="z" required /><br />
+        
+                <input type="submit" value="SEND" />
+            </form>
+        </div>
+        <div class="webGLbox">
+            <canvas id="canvasGL"></canvas>
+        </div>
+    </div>
+
     <script src="js/Main_Script.js"></script>
+
+    <script>
+       //logic of getitng x y z values
+    </script>
 </body>
 </html> 

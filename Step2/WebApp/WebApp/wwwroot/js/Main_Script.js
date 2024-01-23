@@ -1,7 +1,8 @@
 function webGLStart() {
 
     var canvas = document.getElementById("canvasGL");
-
+    
+    
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -14,7 +15,6 @@ function webGLStart() {
     document.body.style.overflow = 'hidden';
     document.documentElement.style.margin = '0';
     document.documentElement.style.overflow = 'hidden';
-
     var gl = canvas.getContext("webgl", { antialias: false });
 
     initShaders(gl);

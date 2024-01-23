@@ -1,5 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    @*ViewData["Title"] = "Home Page";*@
+    Layout = null;
 }
 
-<h1>Welcome!!!</h1>
+ @*<h1>Welcome!!!</h1> *@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebGL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/glMatrix-0.9.5.js"></script>
+    <script type="text/javascript" src="js/Vertex_Shader_Code.js"></script>
+    <script type="text/javascript" src="js/Fragment_Shader_Code.js"></script>
+    <script type="text/javascript" src="js/initShaders.js"></script>
+
+</head>
+<body>
+    <canvas id="canvasGL"></canvas>
+    <script src="js/Main_Script.js"></script>
+</body>
+</html> 
